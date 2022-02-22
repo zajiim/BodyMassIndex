@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         ),
         scaffoldBackgroundColor: Color(0xFF0A0E21),
       ),
-      title: 'BMI Calculator',
+      title: 'BMI Calc',
       home: const HomePage(),
     );
   }
