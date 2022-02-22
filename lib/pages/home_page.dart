@@ -84,7 +84,7 @@ class _HomePageState extends State<HomePage> {
               cardChild: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     'HEIGHT',
                     style: kLabelTextStyle,
                   ),
@@ -97,7 +97,7 @@ class _HomePageState extends State<HomePage> {
                         height.toString(),
                         style: kBigTextStyle,
                       ),
-                      Text(
+                      const Text(
                         'cm',
                         style: kLabelTextStyle,
                       ),
@@ -106,9 +106,9 @@ class _HomePageState extends State<HomePage> {
                   SliderTheme(
                     data: SliderTheme.of(context).copyWith(
                       thumbShape:
-                          RoundSliderThumbShape(enabledThumbRadius: 16.0),
+                          const RoundSliderThumbShape(enabledThumbRadius: 16.0),
                       overlayShape:
-                          RoundSliderOverlayShape(overlayRadius: 28.0),
+                          const RoundSliderOverlayShape(overlayRadius: 28.0),
                     ),
                     child: Slider(
                       value: height.toDouble(),
@@ -138,7 +138,7 @@ class _HomePageState extends State<HomePage> {
                     cardChild: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           'WEIGHT',
                           style: kLabelTextStyle,
                         ),
@@ -157,7 +157,7 @@ class _HomePageState extends State<HomePage> {
                               },
                               icon: FontAwesomeIcons.minus,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
                             RoundedIconButton(
@@ -179,7 +179,7 @@ class _HomePageState extends State<HomePage> {
                     cardChild: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           'AGE',
                           style: kLabelTextStyle,
                         ),
@@ -200,7 +200,7 @@ class _HomePageState extends State<HomePage> {
                               },
                               icon: FontAwesomeIcons.minus,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 10.0,
                             ),
                             RoundedIconButton(

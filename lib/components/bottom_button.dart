@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 
 class BottomButton extends StatelessWidget {
-  BottomButton({required this.buttonTitle, required this.onTap});
+  const BottomButton({Key? key, required this.buttonTitle, required this.onTap})
+      : super(key: key);
   final VoidCallback onTap;
   final String buttonTitle;
   @override
@@ -21,7 +22,7 @@ class BottomButton extends StatelessWidget {
             style: kCalculateTextStyle,
           ),
         ),
-        padding: EdgeInsets.only(
+        padding: const EdgeInsets.only(
           bottom: 18.0,
         ),
       ),
